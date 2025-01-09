@@ -1,6 +1,9 @@
 Inicia-se a aplicação usando o comando no terminal:
 # python manage.py runserver
 
+É preciso que o link do projeto seja este para funcionar:
+# http://127.0.0.1:8000/diario/
+
 Caso necessite de criar novamente o banco de dados sqlite3, use o comando:
 # python manage.py makemigrations para alterações no banco de dados
 # python manage.py migrate para criar o banco de dados
