@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block 'body' %}
+
+<div class='bg-gray-900 min-h-screen relative isolate'>
+    <svg class="absolute inset-0 -z-10 size-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+        <defs>
+            <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                <path d="M.5 200V.5H200" fill="none" />
+            </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+            <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
+    </svg>
+
+    <div class="max-w-2xl w-1/2 mx-auto py-60 justify-center">
+        <div>
+            <div>
+                <h1 class="text-5xl text-center font-semibold tracking-tight text-white sm:text-7xl">Login</h1>
+                <form method="POST" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <div class="mt-8">
+                        <label for="username" class="block text-sm font-medium text-gray-400">Usuário</label>
+                        <input type="text" id="nome" name="nome" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Digite seu nome de usuário">
+                    </div>
+                    <div class="mt-4">
+                        <label for="password" class="block text-sm font-medium text-gray-400">Senha</label>
+                        <input type="password" id="senha" name="senha" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" placeholder="Digite sua senha">
+                    </div>
+                    <button type="submit" class="mt-6 w-full bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-500">Entrar</button>
+                </form>
+                <div class="mt-4 text-center">
+                    <p class="text-gray-400">Não tem uma conta? <a href="{% url 'registro' %}" class="text-indigo-400 hover:underline">Registrar</a></p>
+                </div>
+                <h2 class="text-gray-200 text-center px-8.5 py-3">{{funcional}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
