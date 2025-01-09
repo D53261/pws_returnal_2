@@ -1,0 +1,8 @@
+Inicia-se a aplicação usando o comando no terminal:
+# python manage.py runserver
+
+Caso necessite de criar novamente o banco de dados sqlite3, use o comando:
+# python manage.py makemigrations para alterações no banco de dados
+# python manage.py migrate para criar o banco de dados
+
+Caso precise de mais informações, acesse a documentação do Django: https://docs.djangoproject.com/pt-br/3.2/
