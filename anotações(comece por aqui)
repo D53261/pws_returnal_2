@@ -5,4 +5,6 @@ Caso necessite de criar novamente o banco de dados sqlite3, use o comando:
 # python manage.py makemigrations para alterações no banco de dados
 # python manage.py migrate para criar o banco de dados
 
+Todas as extenções ou bibliotecas que devem ser instaladas em sua máquina ou ambiente virtual estão listadas no arquivo requirements.txt
+
 Caso precise de mais informações, acesse a documentação do Django: https://docs.djangoproject.com/pt-br/3.2/
