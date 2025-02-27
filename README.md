@@ -14,5 +14,5 @@ Desta vez tive o prazer de ter meu primeiro contato com o framework de desenvolv
 
 ## Feito por:
 ### Danilo Ribeiro 
-### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-catroli-da-silva/
 ### Email: danilo051007@gmail.com
